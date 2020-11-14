@@ -1,0 +1,150 @@
+/*@media(min-width: 768px) and (max-width: 991px){
+    
+    .about{
+        padding-left: 0
+    }
+
+    .about .about-s .about-p p{
+        line-height: 14px;
+    }
+
+}
+*/
+
+@media(max-width: 767px) {
+    .portifolio>ul {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    .portifolio>ul {
+        width: 100%;
+    }
+    .gallery>ul>li,
+    .gallery>ul>li:last-child {
+        margin: auto;
+        margin-bottom: 20px
+    }
+    .portifolio {
+        display: block;
+    }
+    .infos .name {
+        font-size: 58px;
+    }
+    .infos>p {
+        margin: 0;
+    }
+    /*
+    .about{
+        padding-left: 0;
+    }
+*/
+    /*
+    .about .about-s .about-p p{
+        font-size: 11px;
+        line-height: normal;
+    }
+*/
+    header {
+        padding-bottom: 0;
+        position: static;
+        transition: none !important;
+        ;
+    }
+    header nav {
+        padding: 0;
+        float: none;
+        text-align: left;
+        /*            transition: all 3s ease-in-out;*/
+    }
+    header nav ul {
+        display: block;
+        /* float: right; */
+        /*    background: blue;*/
+        width: 100%;
+        float: left;
+        position: relative;
+        z-index: 9999;
+        /*        top: -100%*/
+        /*            transition: 3s all ease-in-out;*/
+    }
+    nav ul li {
+        list-style: none;
+        display: block;
+        background: rgb(249, 226, 166);
+        width: 100%;
+        /*    margin-bottom: 19px;*/
+        float: right;
+        text-align: left;
+        border-bottom: 1px solid #ad7f07;
+        /*       transition: 2s all ;*/
+    }
+    header nav ul li:hover {
+        background-color: #fbd981
+    }
+    nav .menu-bar {
+        width: 100%;
+        display: block;
+        background: rgb(44, 44, 43);
+        color: white;
+        font-size: 30px;
+        padding: 42px 0 38px 0;
+        position: relative;
+    }
+}
+nav .toggle {
+    direction: rtl;
+    display: block;
+    /*    padding: 9px 21px;*/
+    text-align: right;
+    cursor: pointer;
+    color: #9f7200;
+    /*
+    position: relative;
+    top: 19px;
+*/
+    position: absolute;
+    top: 24px;
+    right: 25px;
+}
+.about {
+    margin-top: 40px
+}
+.about .about-s img {
+    display: none;
+}
+.about .about-s {
+    background: #f1cc00;
+}
+
+/*
+    nav .menu-bar{
+    width: 100%;
+    display: block ;
+    background: rgb(66, 45, 17);
+    color: white;
+    font-size: 30px!important;
+}
+    }
+    nav .toggle{
+    direction: rtl;
+    display: block;
+    padding: 9px 21px;
+    text-align: right;
+    }
+*/
+
+
+/*
+    .logo{
+        display: none;
+    }
+*/
+
+.container-0 {
+    padding: 0;
+}
+.left-0 {
+    left: -100% !important;
+}
+
+}

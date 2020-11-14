@@ -1,0 +1,581 @@
+@font-face {
+    font-family: 'Cairo';
+    src: url(../fonts/Cairo-Regular.ttf)
+}
+@font-face {
+    font-family: 'CenturyGothicRegular';
+    src: url(../fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com-fonts-mhpY.ttf)
+}
+@font-face {
+    font-family: 'ERASLGHT';
+    src: url(../fonts/ERASLGHT.TTF)
+}
+@font-face {
+    font-family: 'tr';
+    src: url(../fonts/y.ttf)
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ERASLGHT', 'tr', 'CenturyGothicRegular', 'Cairo' !important;
+}
+i.fa {
+    font-family: 'FontAwesome' !important;
+}
+
+/*
+
+*/
+
+
+/*
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix{clear: both;}
+*/
+
+
+/*============<< global_style >>===================*/
+
+
+/* nav color=>  #9F7200*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.padding-0 {
+    padding: 0
+}
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000
+}
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+    outline: 0
+}
+.hidden {
+    display: none !important;
+}
+
+/*
+    ::-webkit-scrollbar {
+        width: 12px
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #ecf0f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #95a5a6;
+        border: 1px solid rgba(0,0,0,.1)
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: #7c2929;
+        display: none
+    }
+
+    ::-webkit-scrollbar-corner {
+          background-color: #00f
+    }
+*/
+
+
+/*==========================*/
+
+.intro {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/girle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    direction: rtl;
+    padding: 10% 15% 0 0
+}
+.intro>div {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Cairo";
+    direction: ltr
+}
+.intro>div>h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.intro>div>h1>bdi {
+    font-size: 102px;
+    text-shadow: 0 0 10px #000;
+    text-shadow: 1px 1px 0px rgb(200, 200, 200), 0px 2px 0px rgb(180, 180, 180), 0px 3px 0px rgb(160, 160, 160), 0px 4px 0px rgba(140, 140, 140, 0.498), 0px 0px 0px rgb(120, 120, 120), 0px 5px 10px rgba(0, 0, 0, 0.498);
+    vertical-align: baseline;
+    letter-spacing: 0.02em;
+}
+.intro>div>p {
+    font-size: 20px
+}
+.intro>div>span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(1, 177, 175, 1) url(https://static.parastorage.com/services/skins/2.1229.63/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+    margin-top: 25px;
+    font-weight: bold;
+    position: relative
+}
+.intro>div>span>bdi {
+    position: relative;
+    z-index: 1;
+}
+.intro>div>span>bdi>a {
+    width: 90px;
+    height: 85px;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.intro>div>span>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: all 0.2s linear
+}
+.intro>div>span:hover>span {
+    transition: all 0.2s linear;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+/*
+._header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0
+}
+*/
+
+header {
+    min-width: 100%;
+    /*    height: 106px;*/
+    /*    position: relative;*/
+    align-items: center;
+    padding-bottom: 25px;
+    box-shadow: 0 0 10px #666;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    /*    right: 0;*/
+    background-color: white;
+    transition: all ease-in-out .4s;
+}
+.logo {
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 80px;
+    background-color: rgba(44, 44, 43, 1);
+    color: #9F7200;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    transition: all 0.2s;
+    z-index: 2;
+}
+header a>.logo {
+    color: white;
+}
+header .logo a:focus,
+a:hover {
+    color: #b78402;
+    text-decoration: none;
+}
+.logo>span:last-child {
+    font-size: 20px;
+    display: block;
+}
+.logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: none;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    top: 17px;
+    right: 20px;
+}
+header nav {
+    height: 100%;
+    text-align: center;
+    float: right;
+    padding-top: 30px;
+    /*    transition: all 3s ease-in-out;*/
+}
+
+/* menu-bar */
+
+nav .menu-bar {
+    display: none
+}
+
+/* menu-bar */
+
+header nav ul {
+    display: flex;
+    float: right;
+    /*        transition: all 3s ease-in-out;*/
+}
+header nav ul li {
+    transition: 1.5s all
+}
+header nav ul li a {
+    display: inline-block;
+    padding: 0 20px;
+    color: #9F7200;
+    text-transform: capitalize;
+    font-family: "Cairo";
+    font-size: 15px;
+    transition: all 0.2s linear
+}
+header nav ul li a {
+    display: block;
+    margin-top: 10px;
+    color: #9f7200;
+}
+.active_anchor {
+    color: #2c3e50
+}
+.portifolio {
+    /*    display: flex;*/
+    margin-top: 90px;
+}
+.portifolio>ul {
+    width: 50%;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px
+}
+.infos>p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #9F7200;
+    margin: 0 0 0px -80px;
+}
+.infos>div {
+    padding-left: 75px
+}
+.infos .name {
+    font-size: 80px;
+    text-transform: capitalize;
+    color: #8B0000;
+    font-weight: bold
+}
+.infos>div>ul>li {
+    font-family: 'CenturyGothicRegular' !important;
+    text-transform: uppercase;
+}
+.infos>div>ul>li:not(.name) {
+    color: #9F7200;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    /*letter-spacing: -2px*/
+}
+.infos>div>span {
+    font-size: 13px;
+    color: #2980b9;
+    cursor: pointer
+}
+.infos>div>span:hover {
+    text-decoration: underline
+}
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*    padding: 0 0 0 20px*/
+}
+.gallery>ul {
+    display: flex;
+    flex-wrap: wrap
+}
+.gallery ul li {
+    width: 100%;
+    height: 170px;
+    /*    margin: 0 20px 20px 0;*/
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gallery ul li img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    display: block;
+}
+.gallery ul li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    text-transform: uppercase
+}
+.gallery ul li:hover span {
+    display: flex;
+    animation: opac 0.2s linear
+}
+.gallery ul li:hover span {
+    background-color: rgba(255, 255, 255, .7);
+    transition: all 0.2s linear
+}
+.gallery ul li:hover img {
+    transform: scale(1.3);
+}
+.gallery>ul>li:last-child {
+    margin: 0
+}
+.gallery>span {
+    text-align: center;
+    font-size: 13px;
+    color: #9f7200;
+    cursor: pointer;
+    padding: 20px 0
+}
+.gallery>span:hover {
+    text-decoration: underline
+}
+.client_feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.client_feedback>i {
+    font-size: 100px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+}
+.client_feedback>p {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #9F7200;
+    font-weight: bold;
+    text-align: center
+}
+.contact {
+    background-color: rgba(66, 45, 17, 1);
+    /*    float: right;*/
+    width: 100%;
+    /*    min-height: 100vh;*/
+    padding: 54px 0 54px 0;
+    overflow: hidden
+}
+.contact .imag {
+    width: 100%;
+    height: 400px;
+    float: left;
+}
+.contact .imag img {
+    width: 100%;
+    height: 100%
+}
+.contact .get {
+    width: 100%;
+    height: 400px;
+    padding: 40px 0 0 35px;
+    background-color: rgba(249, 226, 166, 1);
+    float: right
+}
+.contact .get span {
+    color: #9F7200;
+    letter-spacing: 3px;
+    margin: 0 0 20px;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'CenturyGothicRegular' !important
+}
+.contact .get span:last-of-type {
+    font-family: 'CenturyGothicRegular' !important;
+    color: #000000;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+    /* display: block; */
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact .get p {
+    font-family: 'CenturyGothicRegular' !important;
+    margin: 20px 0;
+    font-size: 15px;
+    width: 67%;
+    line-height: 3;
+}
+.about {
+    width: 100%;
+    float: right;
+    margin-top: 170px;
+    /*    padding-left: 120px;*/
+    position: relative;
+    /*    overflow-y: hidden;*/
+}
+.about .girle {
+    width: 100%;
+}
+.about .girle img {
+    width: 100%;
+    height: 400px
+}
+.about .about-s {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding-top: .7rem;
+    /*    background: url('../images/yallwo.jpg')*/
+}
+.about .about-s img {
+    width: 100%;
+    height: 510px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: 1
+}
+.about .about-s .about-p {
+    width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0px 0 15px 15px;
+}
+.about .about-s .about-p p {
+    font-size: 14px;
+    color: #9f7200;
+    font-family: 'CenturyGothicRegular' !important;
+    line-height: 17px;
+}
+.about .about-s .about-p span {
+    font-size: 19px;
+    font-family: 'CenturyGothicRegular' !important;
+    color: #9f7200;
+    display: block;
+    margin: 0 0 13px 30px;
+    /*    margin-left: 35px;*/
+    letter-spacing: 4px;
+    display: block;
+    width: 70%;
+    text-align: center;
+}
+.about .about-s .about-p span:last-of-type {
+    font-size: 15px;
+    color: #9f7200;
+    display: block;
+    margin-top: 15px;
+    margin-left: 0;
+    letter-spacing: 0;
+    text-align: left;
+}
+footer {
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer>.copyright {
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center
+}
+@keyframes opac {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+/* section about */
+
+
+/*
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #422d11;
+    float: right;
+}
+.about .images{
+    width: 50%;
+    float: left;
+}
+.about .images img{
+    width: 100%;
+}
+.about .get{
+    width: 50%;
+    float: right;
+    background-color: #f9e2a6;
+}
+
+*/

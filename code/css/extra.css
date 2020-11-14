@@ -1,0 +1,55 @@
+
+
+.intro a{
+    color: #fff;
+    
+}
+.infos>p {
+    color: #9F7200;
+    margin: 0 160px 0px 0;
+}
+.infos>div>span{
+    color: #03645b
+}
+/*
+.about{
+    padding-left: 130px
+}
+*/
+.about .about-s .about-p p {
+    font-size: 17px;
+    color: #9f7200;
+    font-family: 'CenturyGothicRegular' !important;
+    line-height: 23px;
+}
+.about .about-s .about-p{
+    left: 25px;
+}
+.about .about-s .about-p span {
+    font-size: 30px;
+    font-family: 'CenturyGothicRegular' !important;
+    color: #9f7200;
+    margin: 0 0 20px 30px;
+    letter-spacing: 4px;
+    display: block;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact .get span{
+    color: #9F7200;
+    letter-spacing: 6px;
+    margin: 0 0 20px;
+    display: block;
+    font-size: 25px;
+    font-family: 'CenturyGothicRegular' !important;
+}
+.contact .get span:nth-of-type(2), .contact .get p{color: #000; font-weight: bold}
+
+.contact .get span:last-of-type{margin-top: 40px}
+
+
+
+
+
